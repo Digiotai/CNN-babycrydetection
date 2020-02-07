@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Dxtal</title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<style>
+.headr1 {}
+.headr11{display:inline-block; width:30%; align:center;}
+.headr12{display:inline-block;width:69%;}
+a:hover {text-decoration:underline;}
+a{text-decoration:none;color:white;}
+    .row{background-image: url({{ url_for('static', filename='background.png')}});
+         background-repeat: no-repeat;
+        background-size: cover;}
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+    .logo{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="headr1">
+<div class="headr11" >
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img class="logo" src="{{ url_for('static', filename='logo.jpg') }}" alt="Related Book" width="80" height="50"/>
+
+</div>
+<div  class="headr12">
+<a href="DIGIOTAI" style="text-align: left; text-decoration:none; font-size:35px; " title="DIGIOTAI"> <font color="#808080">Baby Cry Classification using CNN</font></a>
+</br>
+</div>
+</div>
+
+<div class="row">
+ 
+  <div class="col-md-7">
+      <h2 style="color:white"><b>Upload a recording file</b></h2>
+    <br>
+    <form action="" method=post enctype=multipart/form-data>
+      <input type=file name=file class="button">
+    </br>
+      <input type=submit value=Upload class="button">
+    </form>
+
+      <h2 style="color:white"><b>Output</b></h2>
+    <br>
+    <table class="table" id="results-table">
+       
+		<tr>
+          {% block content %}{% endblock %}
+        </tr>
+    </table>
+  </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+ 
+</div>
+
+</body>
+
+</html>
+ 
